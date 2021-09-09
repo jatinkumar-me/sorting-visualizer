@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+  /* border: 2px solid red; */
+  text-transform: uppercase;
+}
+h1{
+  font-weight: bold;
+  font-size: larger;
+}
+
+.algos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
+nav {
+  background-color: #3b3a3a;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 60%;
+      grid-template-columns: 30% 60%;
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
+  padding: 0% 5%;
+}
+
+nav .array-inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  place-content: center;
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_size {
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_speed {
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_generate {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 4% 0% 0% 0%;
+  padding-left: 20%;
+}
+
+nav .array-inputs #a_generate:hover {
+  cursor: pointer;
+}
+
+
+
+nav .header_right .nav-heading {
+
+  padding: 3% 0%;
+}
+
+
+nav .header_right .algos button {
+  
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 5% 0%;
+  font-size: medium;
+}
+
+nav .header_right .algos button:hover {
+  background-color: rgb(78, 78, 78);
+  cursor: pointer;
+}
+
+
+nav .header_right .algos .butt_locked {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_locked:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_selected {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+nav .header_right .algos .butt_selected:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_unselected:hover {
+  background-color: rgb(78, 78, 78);
+  cursor: pointer;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+}
+
+section #Info_Cont1 {
+  padding: 20%;
+}
+
+section #array_container {
+  
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  height: 70vh;
+}
+
+section #Info_Cont2 {
+  padding: 20%;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  margin-left: 5px;
+  padding: 5px;
+}
+
+/* 
+.generateButton:hover{
+  background-color: rgb(78, 78, 78);
+  cursor: pointer;
+} */
