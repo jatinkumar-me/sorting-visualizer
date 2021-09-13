@@ -11,17 +11,24 @@
 <body>
 
     <header>
+        <h1 class="nav-heading">Sorting visualizer</h1>
         <nav>
+            
             <div class="array-inputs">
-                <p>Size of the array:</p>
-                <input id="a_size" type="range" min=20 max=150 step=1 value=80>
-                <p>Speed of the algorithm:</p>
-                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+                
+                <div class="containerInput">
+                    <p>Size of the array:</p>
+                    <input id="a_size" type="range" min=20 max=150 step=1 value=80>
+                </div>
+                <div class="containerInput">
+                    <p>Speed of the algorithm:</p>
+                    <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+                </div>
                 <button class = "generateButton" id="a_generate">Generate New Array!</button>
             </div>
 
             <div class="header_right">
-                <h1 class="nav-heading">Sorting visualizer</h1>
+                
 
                 <div class="algos">
                     <button >Bubble</button>
@@ -38,16 +45,8 @@
 
     <section>
 
-        <div id="Info_Cont1">
-            <p></p>
-        </div>
-
         <div id="array_container">
             
-        </div>
-
-        <div id="Info_Cont2">
-            <p></p>
         </div>
 
     </section>

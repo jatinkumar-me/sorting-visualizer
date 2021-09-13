@@ -10,36 +10,46 @@
   text-transform: uppercase;
 }
 h1{
+  color: white;
+  padding: 1rem 5rem;
   font-weight: bold;
-  font-size: larger;
+  font-size: x-large;
+  background-color: #3b3a3a;
+
 }
 
 .algos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 
 nav {
   background-color: #3b3a3a;
   color: white;
-  display: -ms-grid;
+  display: flex;
+  justify-content: space-evenly;
+  /* display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30% 60%;
       grid-template-columns: 30% 60%;
   -webkit-column-gap: 10%;
           column-gap: 10%;
-  padding: 0% 5%;
+  padding: 0% 5%; */
 }
 
 nav .array-inputs {
-  display: -ms-grid;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  /* display: -ms-grid;
   display: grid;
   -ms-grid-columns: 60% 40%;
       grid-template-columns: 60% 40%;
   place-content: center;
-  padding: 5% 0%;
+  padding: 5% 0%; */
 }
 
 nav .array-inputs #a_size {
@@ -51,33 +61,51 @@ nav .array-inputs #a_speed {
 }
 
 nav .array-inputs #a_generate {
-  background-color: transparent;
+  background-color: rgb(94, 94, 94);
+  /* background-color: transparent; */
+  border-radius: 1rem;
   border: none;
   outline: none;
   color: white;
-  padding: 4% 0% 0% 0%;
-  padding-left: 20%;
+  padding: 1rem;
+  /* padding: 4% 0% 0% 0%; */
+  /* padding-left: 20%; */
 }
 
 nav .array-inputs #a_generate:hover {
   cursor: pointer;
+  background-color: rgb(75, 75, 75);
 }
 
 
+.header_right { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-nav .header_right .nav-heading {
-
-  padding: 3% 0%;
+.containerInput{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.containerInput p {
+  max-width: 150px;
 }
 
 
 nav .header_right .algos button {
   
-  background-color: transparent;
+  background-color: rgb(94, 94, 94);
+  border-radius: 1rem;
   border: none;
   color: white;
+  margin-left: 15px;
+  margin-top : 15px;
   outline: none;
-  padding: 5% 0%;
+  /* height: 1rem; */
+  padding: 2rem;
   font-size: medium;
 }
 
@@ -113,10 +141,10 @@ nav .header_right .algos .butt_unselected:hover {
 }
 
 section {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 20% 60% 20%;
-      grid-template-columns: 20% 60% 20%;
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
 }
 
 section #Info_Cont1 {
